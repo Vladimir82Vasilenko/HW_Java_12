@@ -32,7 +32,9 @@
                 <configuration>
                     <failIfNoTests>true</failIfNoTests>
                 </configuration>
+
             </plugin>
+
 
             <plugin>
                 <groupId>org.jacoco</groupId>
@@ -84,5 +86,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
