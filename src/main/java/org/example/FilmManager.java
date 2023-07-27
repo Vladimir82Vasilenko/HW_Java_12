@@ -26,9 +26,9 @@ public class FilmManager {
 
     public String[] findAllFilms() {
         return films;
-   }
+    }
 
-   public String[] findLastFilms() {
+    public String[] findLastFilms() {
         int requiredLength;
         if (films.length < limit) {
             requiredLength = films.length;
@@ -36,10 +36,10 @@ public class FilmManager {
             requiredLength = limit;
         }
         String[] tmp = new String[requiredLength];
-       for (int i = 0; i < tmp.length; i++) {
-           tmp[i] = films[films.length - 1 - i];
-       }
-       return tmp;
+        for (int i = 0; i < tmp.length; i++) {
+            tmp[i] = films[films.length - 1 - i];
+        }
+        return tmp;
     }
 }
 
